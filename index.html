@@ -38,7 +38,7 @@
             padding: 50px;
         }
 
-        .button a {
+        .button {
             border: 2px solid;
             border-color: #d3cc00;
             background-color: white;
@@ -46,13 +46,11 @@
             padding: 3px 11px;
             font-size: 17px;
             font-family: Candara;
-            text-decoration: none;
             cursor: pointer;
         }
-        .button a:hover {
+        .button:hover {
             background-color: #d3cc00;
             color: white;
-            text-decoration: none;
         }
         div.fixed {
             position: fixed;
@@ -84,10 +82,13 @@
 
         <h3 style="font-size:25px;">CV</h3>
         <p>
-
-        <div class="button">
-            <a href="CV.pdf" download>Show me</a>
-        </div>
+            <button class="button" onclick="myFunction()">Show me</button>
+            <p id="demo"></p>
+            <script>
+            function myFunction() {
+                window.open('CV.pdf', '_blank');
+            }
+            </script>
         </p>
     </div>
 </body>
