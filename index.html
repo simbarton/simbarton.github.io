@@ -22,7 +22,7 @@
         }
 
         /* Headings */
-        h1, h2, h3 {
+        h1, h2, h3, h4 {
             color: #d3cc00;
             margin-bottom: 5px; /* Reduces space between heading and text */
         }
@@ -43,8 +43,8 @@
             border-color: #d3cc00;
             background-color: white;
             color: #d3cc00;
-            padding: 3px 11px;
-            font-size: 17px;
+            padding: 2px 10px;
+            font-size: 16px;
             font-family: Candara;
             cursor: pointer;
         }
@@ -52,12 +52,20 @@
             background-color: #d3cc00;
             color: white;
         }
-        div.fixed {
-            position: fixed;
-            color: #d3cc00;
-            bottom: 10px;
-            padding-bottom: 10px;
-            padding-left: 50px;
+        a:link {
+          color: #d3cc00;
+        }
+
+        a:visited {
+          color: purple;
+        }
+
+        a:hover {
+          color: hotpink;
+        }
+
+        a:active {
+          color: grey;
         }
     </style>
 </head>
@@ -72,15 +80,22 @@
             Third-year student of Mathematical Modelling<br>
             <br>
             Faculty of Mathematics and Physics,<br>
-            Charles University<br>
+            Charles University, Prague<br>
         </p>
 
-        <h2 style="font-size:25px;">Research</h2>
+        <h2 style="font-size:25px;">Study interests</h2>
         <p>
-            Internal gravity waves - looking into instabilities of internal GWs
+            Mathematical modelling – applied mathematics – atmospheric models and physics <br>
+            Especially: Internal gravity waves and instabilities caused by them
         </p>
 
-        <h3 style="font-size:25px;">CV</h3>
+        <h3 style="font-size:25px;">Useful links</h3>
+        <p>
+            Are they growing? Find out through
+            <a href="https://info.chmi.cz/bio/mapy.php?type=houby" target="_blank">ČHMÚ model</a>
+        </p>
+
+        <h4 style="font-size:25px;">CV</h4>
         <p>
             <button class="button" onclick="myFunction()">Show me</button>
             <p id="demo"></p>
@@ -93,3 +108,5 @@
     </div>
 </body>
 </html>
+
+
