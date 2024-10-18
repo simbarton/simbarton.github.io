@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Šimon Bartoň</title>
+    <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
     <style>
         body {
             margin: 0;
@@ -22,7 +25,7 @@
         }
 
         /* Headings */
-        h1, h2, h3, h4 {
+        h1, h2, h3, h4, h5 {
             color: #d3cc00;
             margin-bottom: 5px; /* Reduces space between heading and text */
         }
@@ -35,7 +38,16 @@
 
         /* Container to control the padding and structure */
         .container {
-            padding-left: 150px;
+            /* padding-left: 150px; */
+        }
+
+        .padded-text{
+            padding:0 2rem;
+        }
+        @media screen and (min-width:800px){
+            .padded-text{
+                padding:0 150px;
+          }
         }
 
         .button {
@@ -74,7 +86,7 @@
     <!-- Top Stripe -->
     <div class="top-stripe"></div>
 
-    <div class="container">
+    <div class="padded-text">
         <h1 style="font-size:35px;">Šimon Bartoň</h1>
         <p>
             Third-year student of Mathematical Modelling<br>
@@ -97,7 +109,6 @@
             <a href="https://bcmod.karlin.mff.cuni.cz/" target="_blank"> Bc. programme website</a><br><br>
             Are they growing? Look at
             <a href="https://info.chmi.cz/bio/mapy.php?type=houby" target="_blank">ČHMÚ model</a>
-
         </p>
 
         <h4 style="font-size:25px;">CV</h4>
@@ -109,6 +120,15 @@
                 window.open('CV_barton.pdf', '_blank');
             }
             </script>
+        </p>
+
+        <h5 style="font-size:25px;">Recent projects</h5>
+        <p>
+            <i>Computational physics:</i><br>
+            Numerical solutions of the eigenvalue problem of the Laplace operator on a region defined by a piano
+            soundboard assuming Dirichlet boundary condition.
+            <br><br>
+            <img src="pianos.png" alt="pianos" style="width:400px;height:286px;">
         </p>
     </div>
 </body>
